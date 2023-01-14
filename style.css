@@ -1,7 +1,6 @@
 * {
   background-color: rgb(20, 20, 20);
   color: white;
-  /* outline: none; */
   font-family: sans-serif;
 }
 body {
@@ -24,20 +23,33 @@ body > p {
   display: flex;
   justify-content: space-between;
 }
-/* .box {
-} */
-button {
-  /* min-width: 500px; */
+#btn{
   padding: 10px 40px;
   background-color: white;
   color: black;
   margin-top: 30px;
   margin-bottom: 50px;
 }
-p, table {
+p {
   margin: 10px auto;
 }
 #empNo{
     margin: 20px 0px;
     color: rgb(131, 131, 131);
+}
+table{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left:30px;
+    width: 60%;
+}
+table button{
+    margin: 20px 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+.hidden{
+    display: none;
 }
