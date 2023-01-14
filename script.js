@@ -1,7 +1,7 @@
 let id1 = 0;
 let msg = document.getElementById("msg");
 let arr = [];
-
+let trData = document.getElementById("trData");
 let fun1 = () => {
   let inputs = document.getElementsByTagName("input");
   let naam = inputs[0].value;
@@ -45,35 +45,37 @@ let fun1 = () => {
     //             `;
     // }
 
-    inputs[0].value = "";
-    inputs[1].value = "";
-    inputs[2].value = "";
+    // inputs[0].value = "";
+    // inputs[1].value = "";
+    // inputs[2].value = "";
   }
 };
 let fun2 = () => {
   msg.innerHTML = "";
 };
 let fun3=(i)=>{
-    arr=arr.splice(i,1);
+    arr.splice(i,1);
     fun4();
 }
 let fun4=()=>{
-    let trData = document.getElementById("trData");
+    
     trData.innerHTML = "";
+    let a=0;
     for (let element of arr) {
       trData.innerHTML += `
-                
+                <tbody>
                 <tr>
 
                 <td> ${element.id} </td> 
                 <td>Name:${element.name}</td>
                 <td>Profession: ${element.profession}</td> 
                 <td>Age: ${element.age}</td>
-                <td><button style="border-radius: 30px;" onclick="fun3(id-1)">Delete User</button>
+                <td><button style="border-radius: 30px;" onclick="fun3(${a})">Delete User</button>
                 </td>
 
                 </tr>
-                
+                </tbody>
                 `;
+                a++;
     }
 }
