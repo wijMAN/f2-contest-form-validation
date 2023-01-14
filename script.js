@@ -3,6 +3,9 @@ let arr = [];
 let msg = document.getElementById("msg");
 let trData = document.getElementById("trData");
 let empNo = document.getElementById("empNo").classList;
+let tbl= document.getElementById("tbl").classList;
+tbl.add('hidden');
+
 let fun1 = () => {
   let inputs = document.getElementsByTagName("input");
   let naam = inputs[0].value;
@@ -14,6 +17,7 @@ let fun1 = () => {
       '<span style="color:red"> Error : Please make sure all the fields are filled before adding in an employee ! </span>';
   } else {
     id1++;
+    tbl.remove('hidden');
     msg.innerHTML =
       '<span style="color:green"> Success: Employee Added! </span>';
     empNo.add("hidden");
@@ -33,18 +37,22 @@ let fun1 = () => {
   }
   msg.classList.remove("hidden");
 };
+
 let fun2 = () => {
   msg.innerHTML = "";
   msg.classList.remove("hidden");
 };
+
 let fun3 = (i) => {
   arr.splice(i, 1);
   fun4();
   if (arr.length == 0) {
     empNo.remove("hidden");
     msg.classList.add("hidden");
+    tbl.add('hidden');
   }
 };
+
 let fun4 = () => {
   trData.innerHTML = "";
   let a = 0;
