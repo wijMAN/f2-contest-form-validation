@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="New Employees" />
+    <meta name="author" content="Wijdan Aamir" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/1322/1322185.png"
+      type="image/x-icon"
+    />
+    <title>New Employees</title>
+  </head>
+  <body>
+    <p>New Employees</p>
+
+    <form class="cont1">
+      <div class="box">
+        <p>Enter Name</p>
+        <input type="text" name="" id="" required oninput="fun2()" />
+      </div>
+      <div class="box">
+        <p>Enter Profession</p>
+        <input type="text" name="" id="" required oninput="fun2()" />
+      </div>
+      <div class="box">
+        <p>Enter age</p>
+        <input type="number" name="" id="" min="10" required oninput="fun2()" />
+      </div>
+    </form>
+
+    <div>
+      <button onclick="fun1()">Add User</button>
+      <div id="msg"></div>
+    </div>
+
+    <!-- <div>
+      <p>Added Employees</p>
+    </div> -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Added Employees</th>
+        </tr>
+      </thead>
+
+      <tbody id="trData">
+        
+      </tbody>
+    </table>
+
+    <div>
+      <p id="empNo">You have 0 employees.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

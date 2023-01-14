@@ -1,0 +1,43 @@
+* {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  /* outline: none; */
+  font-family: sans-serif;
+}
+body {
+  margin: auto 40px;
+}
+.box > input {
+  border: 1px solid white;
+  border-radius: 5px;
+  min-width: 350px;
+  padding: 8px 8px;
+  font-size: medium;
+}
+.box > p {
+  font-size: 15px;
+}
+body > p {
+  font-size: 30px;
+}
+.cont1 {
+  display: flex;
+  justify-content: space-between;
+}
+/* .box {
+} */
+button {
+  /* min-width: 500px; */
+  padding: 10px 40px;
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+p, table {
+  margin: 10px auto;
+}
+#empNo{
+    margin: 20px 0px;
+    color: rgb(131, 131, 131);
+}
